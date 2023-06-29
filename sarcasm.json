@@ -1,0 +1,1873 @@
+{
+    "title": "Sarcasm Case Caps Lock",
+    "rules": [
+        {
+            "description": "Sarcasm Case - Caps Lock Init",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        },
+                        {
+                            "key_code": "caps_lock"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - a",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "a",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "a",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - a",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "a",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "a"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - b",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "b",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "b",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - b",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "b",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "b"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - c",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "c",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "c",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - c",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "c",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "c"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - d",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "d",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "d",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - d",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "d",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "d"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - e",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "e",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "e",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - e",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "e",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "e"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - f",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "f",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "f",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - f",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "f",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "f"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - g",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "g",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "g",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - g",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "g",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "g"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - h",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "h",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "h",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - h",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "h",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "h"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - i",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "i",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "i",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - i",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "i",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "i"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - j",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "j",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - j",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "j"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - k",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "k",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "k",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - k",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "k",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "k"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - l",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "l",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "l",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - l",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "l",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "l"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - m",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "m",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "m",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - m",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "m",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "m"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - n",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "n",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "n",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - n",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "n",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "n"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - o",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "o",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "o",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - o",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "o",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "o"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - p",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "p",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "p",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - p",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "p",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "p"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - q",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "q",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "q",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - q",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "q",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "q"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - r",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "r",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "r",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - r",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "r",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "r"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - s",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "s",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "s",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - s",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "s",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "s"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - t",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "t",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - t",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "t"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - u",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "u",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "u",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - u",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "u",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "u"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - v",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "v",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "v",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - v",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "v",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "v"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - w",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "w",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "w",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - w",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "w",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "w"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - x",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "x",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "x",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - x",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "x",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "x"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - y",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "y",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "y",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - y",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "y",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "y"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Capitalize Letter - z",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "z",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "z",
+                            "modifiers": [
+                                "shift"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Sarcasm Case - Don't Capitalize Letter - z",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "capitalize_next",
+                            "value": false
+                        }
+                    ],
+                    "from": {
+                        "key_code": "z",
+                        "modifiers": {
+                            "mandatory": [
+                                "caps_lock"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "z"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "capitalize_next",
+                                "value": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
