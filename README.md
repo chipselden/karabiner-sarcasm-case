@@ -2,7 +2,7 @@
 Karabiner Elements rules that turn the caps lock key into a "sArCaSm CaSe" key
 
 # setup
-1. Copy `sarcasm.json` to ~/.config/karabiner/assets/complex_modifications/sarcasm.json
+1. Copy `sarcasm.json` to `~/.config/karabiner/assets/complex_modifications/sarcasm.json`
 2. Open the `Karabiner-Elements` app
 3. Select `Complex Modifications` tab
 4. Select `Add rule`
